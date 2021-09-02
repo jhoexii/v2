@@ -10,7 +10,7 @@ eval "$Az$Bz$Cz$z$Dz$Ez$Fz$Gz$z$Dz$Ez$Hz$Iz$z$Jz$z$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$z$
 #Database Details
 dbhost='172.104.185.189';
 dbuser='bluecor1_pro';
-dbpass='bluecor1_pro1';
+dbpass='bluecor1_pro2';
 dbname='bluecor1_pro';
 dbport='3306';
 cat << EOF > /etc/openvpn/script/config.sh
