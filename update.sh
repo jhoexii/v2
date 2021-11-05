@@ -10,7 +10,7 @@ YELLOW='\033[00;33m';
 #Database Details
 dbhost='172.104.185.189';
 dbuser='bluecor1_pro';
-dbpass='bluecor1_pro2';
+dbpass='bluecor1_pro123';
 dbname='bluecor1_pro';
 dbport='3306';
 
