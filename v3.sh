@@ -9,9 +9,9 @@ z="
 eval "$Az$Bz$Cz$z$Dz$Ez$Fz$Gz$z$Dz$Ez$Hz$Iz$z$Jz$z$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$z$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$z$Tz$Uz$cz$Wz$Xz$Yz$Zz$az$bz$z$dz$ez$Mz$fz$z$gz$hz$iz$jz$kz$z$lz$mz$nz$z$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$rz$sz$yz$rz$sz$ABz$z$BBz$CBz$DBz$EBz$z$FBz$GBz$HBz$IBz$JBz$KBz$LBz$z$oz$pz$MBz$NBz$OBz$PBz$z$QBz$RBz$SBz$z$TBz$z$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$UBz$VBz$WBz$z$oz$XBz$YBz$ZBz$aBz$bBz$z$QBz$cBz$z$lz$dBz$bz$z$lz$eBz$z$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$rz$sz$yz$rz$sz$ABz$z$TBz$z$oz$XBz$YBz$ZBz$aBz$rz$sz$fBz$rz$sz$gBz$hBz$wz$iBz$jBz$kBz$rz$sz$lBz$z$lz$mBz$nBz$z$oBz$z$pBz$qBz$rBz$z$sBz$tBz$uBz$vBz$z$oBz$z$Az$Bz$wBz$xBz"
 #Database Details
 dbhost='172.104.185.189';
-dbuser='bluecor1_pro';
-dbpass='bluecor1_pro123';
-dbname='bluecor1_pro';
+dbuser='bluecor1_2022';
+dbpass='bluecor1_2023';
+dbname='bluecor1_2022';
 dbport='3306';
 cat << EOF > /etc/openvpn/script/config.sh
 #!/bin/bash
