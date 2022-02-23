@@ -9,9 +9,9 @@ WHITE='\033[01;37m';
 YELLOW='\033[00;33m';
 #Database Details
 dbhost='172.104.185.189';
-dbuser='bluecor1_pro';
-dbpass='bluecor1_pro123';
-dbname='bluecor1_pro';
+dbuser='bluecor1_2022';
+dbpass='bluecor1_2023';
+dbname='bluecor1_2022';
 dbport='3306';
 
 cat << EOF > /etc/openvpn/script/config.sh
