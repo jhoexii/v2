@@ -6,6 +6,6 @@
   "ServerPort" : "1194",
   "WsPort" : "80",
   "UdpPort" : "53",
-  "Version" : "3.0",
+  "Version" : "7.0",
   "Update" : "new update"
 }
