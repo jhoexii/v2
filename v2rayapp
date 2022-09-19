@@ -1,0 +1,167 @@
+{
+    "Servers": [
+        {
+            "Name": "Server Vmess 1",
+            "Category": "0",
+            "DomainOrIP": "dns.mediatek-v2ray.com",
+            "Flag": "ph",
+            "Port": "443"
+        },
+        {
+             "Name": "Server Vmess 2",
+             "Category": "0",
+             "DomainOrIP": "dns.mediatek-v2ray.com",
+             "Flag": "ph",
+             "Port": "443"
+         },
+        {
+            "Name": "Server Vmess 3",
+            "Category": "1",
+            "DomainOrIP": "dns.mediatek-v2ray.com",
+            "Flag": "us",
+            "Port": "443"
+        },
+        {
+             "Name": "Server Vmess 4",
+             "Category": "1",
+             "DomainOrIP": "dns.mediatek-v2ray.com",
+             "Flag": "sg",
+             "Port": "443"
+         },
+        {
+            "Name": "Server Vmess 5",
+            "Category": "2",
+            "DomainOrIP": "dns.mediatek-v2ray.com",
+            "Flag": "sg",
+            "Port": "443"
+        }
+    ],
+    "Vless": [
+            {
+                "Name": "Server Vless 1",
+                "Category": "0",
+                "DomainOrIP": "dns.mediatek-v2ray.com",
+                "Flag": "in",
+                "Port": "443"
+            },
+            {
+                 "Name": "Server Vless 2",
+                 "Category": "0",
+                 "DomainOrIP": "dns.mediatek-v2ray.com",
+                 "Flag": "fr",
+                 "Port": "443"
+             },
+            {
+                "Name": "Server Vless 3",
+                "Category": "1",
+                "DomainOrIP": "dns.mediatek-v2ray.com",
+                "Flag": "sg",
+                "Port": "443"
+            },
+            {
+                 "Name": "Server Vless 4",
+                 "Category": "1",
+                 "DomainOrIP": "dns.mediatek-v2ray.com",
+                 "Flag": "ph",
+                 "Port": "443"
+             },
+            {
+                "Name": "Server Vless 5",
+                "Category": "2",
+                "DomainOrIP": "dns.mediatek-v2ray.com",
+                "Flag": "jp",
+                "Port": "443"
+            }
+        ],
+        "ShadowSocks": [
+                {
+                    "Name": "ShadowSocks 1",
+                    "Category": "0",
+                    "DomainOrIP": "fr02.proxysocks.xyz",
+                    "Flag": "ph",
+                    "ShadowPass": "NWI5M",
+                    "Security": "chacha20-ietf-poly1305",
+                    "Port": "8388"
+                },
+                {
+                     "Name": "ShadowSocks 2",
+                     "Category": "0",
+                     "DomainOrIP": "fr02.proxysocks.xyz",
+                     "Flag": "ph",
+                     "ShadowPass": "NWI5M",
+                     "Security": "chacha20-ietf-poly1305",
+                     "Port": "8388"
+                 },
+                {
+                    "Name": "ShadowSocks 3",
+                    "Category": "1",
+                    "DomainOrIP": "fr02.proxysocks.xyz",
+                    "Flag": "ph",
+                    "ShadowPass": "NWI5M",
+                    "Security": "chacha20-ietf-poly1305",
+                    "Port": "8388"
+                },
+                {
+                     "Name": "ShadowSocks 4",
+                     "Category": "1",
+                     "DomainOrIP": "fr02.proxysocks.xyz",
+                     "Flag": "sg",
+                     "ShadowPass": "NWI5M",
+                     "Security": "chacha20-ietf-poly1305",
+                     "Port": "8388"
+                 },
+                {
+                    "Name": "ShadowSocks 5",
+                    "Category": "2",
+                    "DomainOrIP": "fr02.proxysocks.xyz",
+                    "Flag": "fr",
+                    "ShadowPass": "NWI5M",
+                    "Security": "chacha20-ietf-poly1305",
+                    "Port": "8388"
+                }
+            ],
+    "Payloads": [
+        {
+            "Name": "youtube",
+            "Host": "youtube.com",
+            "Icon": "youtube",
+            "Info": "for smart users"
+        },
+        {
+            "Name": "google",
+            "Host": "google.com",
+            "Icon": "google",
+            "Info": "google bughost"
+        },
+        {
+            "Name": "mobile legends",
+            "Host": "dns.mediatek-v2ray.com",
+            "Icon": "ml",
+            "Info": "mobile legend promo"
+        },
+        {
+            "Name": "globe",
+            "Host": "shop.globe.com.ph",
+            "Icon": "globe",
+            "Info": "for globe users"
+        },
+        {
+            "Name": "tnt",
+            "Host": "dns.mediatek-v2ray.com",
+            "Icon": "tnt",
+            "Info": "for talk n text users"
+        },
+        {
+            "Name": "Test payload",
+            "Host": "dns.mediatek-v2ray.com",
+            "Icon": "mtk",
+            "Info": "payload for testing"
+        }
+    ],
+    "Notice": "develope by jhoexii",
+    "UpdateUrl": "https://raw.githubusercontent.com/jhoexii/v2/main/2ray",
+    "V2rayID": "2f65b564-92d2-4409-94f8-1d9b7f6e1f5e",
+    "Path": "/dextereskalartevws",
+    "VlessPath":"/dextereskalartews",
+    "Version": "1.0.1"
+}
