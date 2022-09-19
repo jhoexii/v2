@@ -1,35 +1,35 @@
 {
     "Servers": [
         {
-            "Name": "Server 1",
+            "Name": "Server Vmess 1",
             "Category": "0",
             "DomainOrIP": "dns.mediatek-v2ray.com",
             "Flag": "ph",
             "Port": "443"
         },
         {
-             "Name": "Server 2",
+             "Name": "Server Vmess 2",
              "Category": "0",
              "DomainOrIP": "dns.mediatek-v2ray.com",
              "Flag": "ph",
              "Port": "443"
          },
         {
-            "Name": "Server 3",
+            "Name": "Server Vmess 3",
             "Category": "1",
             "DomainOrIP": "dns.mediatek-v2ray.com",
             "Flag": "us",
             "Port": "443"
         },
         {
-             "Name": "Server 4",
+             "Name": "Server Vmess 4",
              "Category": "1",
              "DomainOrIP": "dns.mediatek-v2ray.com",
              "Flag": "sg",
              "Port": "443"
          },
         {
-            "Name": "Server 5",
+            "Name": "Server Vmess 5",
             "Category": "2",
             "DomainOrIP": "dns.mediatek-v2ray.com",
             "Flag": "sg",
@@ -163,5 +163,5 @@
     "V2rayID": "2f65b564-92d2-4409-94f8-1d9b7f6e1f5e",
     "Path": "/dextereskalartevws",
     "VlessPath":"/dextereskalartews",
-    "Version": "3"
+    "Version": 1.0.1
 }
