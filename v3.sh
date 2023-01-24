@@ -8,10 +8,10 @@ z="
 ";WBz='eak';BBz='whil';Nz='fim ';rz='\033';mBz=' cno';Iz='$2"';wBz=''\''sta';Fz='0]="';fz='fim';dBz=' cuu';Uz='mand';az=' 2>&';QBz='slee';lz='tput';PBz='#"';ABz='3m["';FBz='for(';CBz='e tr';bz='1';mz=' civ';Yz='dev/';ez='h $H';Kz='[[ -';kBz='ED !';qBz='t ()';Ez='ndo[';iz='/nul';rBz=' {';Vz='o[0]';Jz='(';hBz='LL S';cBz='p 1s';XBz=' -e ';Sz='im';sz='[1;3';uBz='ot/v';JBz='i++)';uz='ARTI';VBz='& br';MBz=' "\0';ZBz='3[1;';jBz='TART';tz='3mST';gBz='2m A';RBz='p 0.';hz='/dev';OBz=';31m';qz=' "  ';GBz='(i=0';nz='is';wz='ERVI';Lz='e $H';UBz='im &';tBz=' /ro';Hz='1]="';nBz='rm';pBz='star';Rz='ME/f';xBz='rt'\''';yz='7m- ';lBz='7m"';Xz=' > /';Mz='OME/';kz='&1 &';IBz='18; ';jz='l 2>';cz='o[1]';YBz='"\03';vz='NG S';NBz='33[1';Dz='coma';fBz='7m -';vBz='pn';Cz='() {';Qz=' $HO';DBz='ue; ';Oz=']] &';HBz='; i<';gz=') > ';Az='fun_';Gz='$1"';eBz=' dl1';EBz='do';Tz='${co';xz='CES ';Zz='null';oz='echo';KBz='); d';LBz='o';sBz='bash';iBz='CE S';oBz='}';bBz='"';Wz='} -y';Pz='& rm';Bz='bar ';TBz='done';aBz='33m]';dz='touc';pz=' -ne';SBz='1s';
 eval "$Az$Bz$Cz$z$Dz$Ez$Fz$Gz$z$Dz$Ez$Hz$Iz$z$Jz$z$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$z$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$bz$z$Tz$Uz$cz$Wz$Xz$Yz$Zz$az$bz$z$dz$ez$Mz$fz$z$gz$hz$iz$jz$kz$z$lz$mz$nz$z$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$rz$sz$yz$rz$sz$ABz$z$BBz$CBz$DBz$EBz$z$FBz$GBz$HBz$IBz$JBz$KBz$LBz$z$oz$pz$MBz$NBz$OBz$PBz$z$QBz$RBz$SBz$z$TBz$z$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$UBz$VBz$WBz$z$oz$XBz$YBz$ZBz$aBz$bBz$z$QBz$cBz$z$lz$dBz$bz$z$lz$eBz$z$oz$pz$qz$rz$sz$tz$uz$vz$wz$xz$rz$sz$yz$rz$sz$ABz$z$TBz$z$oz$XBz$YBz$ZBz$aBz$rz$sz$fBz$rz$sz$gBz$hBz$wz$iBz$jBz$kBz$rz$sz$lBz$z$lz$mBz$nBz$z$oBz$z$pBz$qBz$rBz$z$sBz$tBz$uBz$vBz$z$oBz$z$Az$Bz$wBz$xBz"
 #Database Details
-dbhost='172.104.185.189';
-dbuser='bluecor1_2022';
-dbpass='bluecor1_2023';
-dbname='bluecor1_2022';
+dbhost='162.212.157.99';
+dbuser='bluecore';
+dbpass='2023';
+dbname='bluecore';
 dbport='3306';
 cat << EOF > /etc/openvpn/script/config.sh
 #!/bin/bash
@@ -22,4 +22,24 @@ PASS='$dbpass'
 DB='$dbname'
 PORT='$dbport'
 EOF
+/bin/cat <<"EOM" >/etc/openvpn/script/login.sh
+#!/bin/bash
+. /etc/openvpn/script/config.sh
+tm="$(date +%s)"
+dt="$(date +'%Y-%m-%d %H:%M:%S')"
+PRE="username='$username' AND userpass='$password' AND freeze='no' AND duration > 0"
+VIP="username='$username' AND userpass='$password' AND freeze='no' AND vip_duration > 0"
+Query="SELECT username FROM users WHERE $PRE OR $VIP"
+auth1=`mysql -u $USER -p$PASS -D $DB -h $HOST -sN -e "$Query"`
+#auth2
+if [ "$auth1" = "$username" ]; then
+echo "user : $username" && echo 'authentication ok.' && exit 0
+fi
+if [ "$auth1" != "$username" ]; then
+echo 'authentication failed.'; 
+exit 1
+fi
+
+EOM
+chmod 755 /etc/openvpn/script/login.sh
 bash vpn
